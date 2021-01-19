@@ -1,0 +1,68 @@
+.price {
+  // margin-bottom: 80px;
+
+  // @media (max-width: $sm) {
+  //   margin-bottom: 40px;
+  // }
+}
+
+.price__container {
+  padding-top: 35px;
+  padding-bottom: 20px;
+
+  background-color: $c-gray-2;
+
+  @media (max-width: $sm) {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+}
+
+.price__list {
+}
+
+.price__item {
+  display: flex;
+  width: $c-6;
+  margin-bottom: 30px;
+  padding: 16px;
+
+  background-color: transparentize($c-accent, .2);
+
+  @media (max-width: $lg) {
+    width: $c-12;
+  }
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+  }
+}
+
+.price__box-img {
+  flex-shrink: 0;
+  width: 164px;
+  margin-right: 16px;
+
+  @media (max-width: $sm) {
+    align-self: center;
+    margin-bottom: 16px;
+  }
+}
+
+.price__box-text {
+  flex-grow: 1;
+  padding: 12px;
+
+  text-align: center;
+
+  background-color: $c-gray-4;
+}
+
+.price__training-type {
+  @media (max-width: $sm) {
+    margin-bottom: 4px;
+  }
+}
+
+.price__taining-cost {
+}

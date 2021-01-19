@@ -1,0 +1,34 @@
+.our-photo {
+  background-color: transparentize($c-accent, .2);
+}
+
+.our-photo__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+  padding: 0 30px;
+
+  @media (max-width: $xl) {
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+}
+
+.our-photo__item {
+  width: 25%;
+
+  border: $c-main solid 15px;
+
+  @media (max-width: $lg) {
+    width: 50%;
+  }
+
+  @media (max-width: $sm) {
+    border: $c-main solid 7px;
+  }
+}
+
+.our-photo__wrap-btn {
+  text-align: center;
+}

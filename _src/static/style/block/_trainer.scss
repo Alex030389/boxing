@@ -1,0 +1,125 @@
+.trainer {
+  overflow: hidden;
+
+  @media (max-width: $lg) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: $sm) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.trainer__container {
+  display: flex;
+}
+
+.trainer__box-img {
+  width: 41.666667%;
+  padding-right: 80px;
+
+  @media (max-width: $lg) {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.trainer__img {
+  position: relative;
+
+  margin-top: 20px;
+  margin-left: 20px;
+
+  box-shadow: -20px -20px 0 0 $c-accent;
+
+  @media (max-width: $lg) {
+    max-width: 200px;
+    margin: 0 auto 30px;
+    margin-top: 10px;
+
+    box-shadow: -10px -10px 0 0 $c-accent;
+  }
+}
+
+.trainer__box-text {
+  position: relative;
+  z-index: 2;
+
+  width: 58.333333%;
+  padding-left: 60px;
+
+  background-color: $c-gray-2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 0;
+    z-index: -1;
+
+    width: 3000px;
+    height: calc(100% + 160px);
+
+    background-color: $c-gray-2;
+
+    @media (max-width: $lg) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $lg) {
+    width: 100%;
+    padding: 30px;
+  }
+
+  @media (max-width: $sm) {
+    width: auto;
+    margin: 0 -15px;
+    padding: 50px 15px;
+  }
+}
+
+.trainer__title {
+  position: relative;
+
+  margin-bottom: 70px;
+
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.3;
+  font-family: $ff-title;
+
+  span {
+    color: $c-accent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+
+    width: 290px;
+    height: 3px;
+
+    background-color: $c-accent;
+
+    @media (max-width: $lg) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $lg) {
+    margin-bottom: 90px;
+    margin-bottom: 40px;
+
+    font-size: 30px;
+    text-align: center;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 25px;
+  }
+}

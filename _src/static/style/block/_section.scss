@@ -1,0 +1,29 @@
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: $sm) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &--pt--xl {
+    padding-top: 180px;
+
+    @media (max-width: $lg) {
+      padding-top: 40px;
+    }
+
+    @media (max-width: $sm) {
+      padding-top: 30px;
+    }
+  }
+
+  &--pb--0 {
+    padding-bottom: 0;
+
+    @media (max-width: $sm) {
+      padding-bottom: 0;
+    }
+  }
+}

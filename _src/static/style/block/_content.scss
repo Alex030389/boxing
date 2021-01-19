@@ -1,0 +1,53 @@
+.content {
+}
+
+.content__wrap-img {
+  position: relative;
+
+  max-width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+
+    width: 2000px;
+    height: 100%;
+
+    background-color: $c-gray-4;
+  }
+
+  &--right {
+    float: right;
+    margin-left: 40px;
+
+    &::after {
+      left: 100%;
+    }
+
+    @media (max-width: $sm) {
+      float: none;
+      margin: 20px auto;
+    }
+  }
+
+
+  &--left {
+    float: left;
+    margin-right: 40px;
+
+    &::after {
+      right: 100%;
+    }
+
+    @media (max-width: $sm) {
+      float: none;
+      margin: 20px auto 30px;
+    }
+  }
+}
+
+.content__img {
+}

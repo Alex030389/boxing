@@ -1,0 +1,137 @@
+@@include('_src/html/block/head.html', {
+  "title": "Галерея БК 'МЕДВЕДЬ'",
+  "description": "Фото и видео тренировок и соревнований боксерского клуба 'МЕДВЕДЬ'",
+  "path": ""
+})
+@@include('_src/html/block/header.html', {
+  "main": "",
+  "services": "",
+  "price": "",
+  "gallery": "main-menu__link--current",
+  "blog": "",
+  "contacts": "",
+  "path": ""
+})
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// gallery -->
+  <section class="gallery section section--pt--xl">
+    <div class="container">
+      <h1 class="visually-hidden">Галерея фотографий и видео боксерского клуба "“МЕДВЕДЬ”"</h1>
+      <div class="gallery__tab-box-btn">
+        <button class="gallery__tab-btn gallery__tab-btn--active title btn-reset" data-tab-btn="0">Фото</button>
+        <button class="gallery__tab-btn title btn-reset" data-tab-btn="1">Видео</button>      
+      </div>
+
+      <div class="gallery__tab-content gallery__tab-content--active" data-tab-content="0">
+        <div class="gallery__list list-reset row" data-js="magnific">
+          @@loop('_src/html/block/loop-gallery-img.html', [
+            {
+              "img": "18",
+              "img-alt": "box img-18",
+            },
+            {
+              "img": "17",
+              "img-alt": "box img-17",
+            },
+            {
+              "img": "16",
+              "img-alt": "box img-16",
+            },
+            {
+              "img": "15",
+              "img-alt": "box img-15",
+            },
+            {
+              "img": "14",
+              "img-alt": "box img-14",
+            },
+            {
+              "img": "13",
+              "img-alt": "box img-13",
+            },
+            {
+              "img": "12",
+              "img-alt": "box img-12",
+            },
+            {
+              "img": "11",
+              "img-alt": "box img-11",
+            },
+            {
+              "img": "10",
+              "img-alt": "box img-10",
+            },
+            {
+              "img": "9",
+              "img-alt": "box img-9",
+            },
+            {
+              "img": "8",
+              "img-alt": "box img-8",
+            },
+            {
+              "img": "7",
+              "img-alt": "box img-7",
+            },
+            {
+              "img": "6",
+              "img-alt": "box img-6",
+            },
+            {
+              "img": "5",
+              "img-alt": "box img-5",
+            },
+            {
+              "img": "4",
+              "img-alt": "box img-4",
+            },
+            {
+              "img": "3",
+              "img-alt": "box img-3",
+            },
+            {
+              "img": "2",
+              "img-alt": "box img-2",
+            },
+            {
+              "img": "1",
+              "img-alt": "box img-1",
+            },
+          ])
+        </div>
+      </div>
+
+      <div class="gallery__tab-content" data-tab-content="1">
+        <ul class="gallery__list list-reset row">
+          @@loop('_src/html/block/loop-gallery-video.html', [
+            {
+              "video": "https://vk.com/video_ext.php?oid=457971307&id=456239061&hash=e5a92aad270c7322&hd=3"
+            },
+            {
+              "video": "https://vk.com/video_ext.php?oid=457971307&id=456239057&hash=810f0d1e9327594d&hd=3"
+            },
+            {
+              "video": "https://vk.com/video_ext.php?oid=457971307&id=456239059&hash=822829b3f19a1bea&hd=2"
+            },
+            {
+              "video": "https://vk.com/video_ext.php?oid=457971307&id=456239056&hash=b78a7793124f86a7&hd=2"
+            },
+            {
+              "video": "https://vk.com/video_ext.php?oid=457971307&id=456239046&hash=920eb945fd70c2cb&hd=1"
+            },
+            {
+              "video": "https://vk.com/video_ext.php?oid=457971307&id=456239032&hash=3621624810750ffc&hd=1"
+            },
+          ])
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('_src/html/block/footer.html')
+@@include('_src/html/block/up.html')
+@@include('_src/html/block/scripts.html', {
+  "path": ""
+})

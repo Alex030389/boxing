@@ -1,0 +1,52 @@
+@@include('_src/html/block/head.html', {
+  "title": "Блог боксерского клуба 'МЕДВЕДЬ'",
+  "description": "Полезные статьи о боксе и о событиях нашего клуба 'МЕДВЕДЬ'",
+  "path": ""
+})
+@@include('_src/html/block/header.html', {
+  "main": "",
+  "services": "",
+  "price": "",
+  "gallery": "",
+  "blog": "main-menu__link--current",
+  "contacts": "",
+  "path": ""
+})
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// blog -->
+  <section class="blog section section--pt--xl">
+    <div class="container">
+      <h1 class="title title--underline title--underline-mb--md">Блог БК “МЕДВЕДЬ”</h1>
+    </div>
+    <div class="container">
+      <p style="text-align: center;">Раздел находится в стадии разработки</p>
+    </div>
+    <!-- <ul class="blog__list list-reset">
+      @@loop('_src/html/block/loop-article.html', [
+        {
+          "date": "18 ноября 2020",
+          "title": "Какой-то заглавный текст",
+          "img": "article-1/1-sm.jpg",
+          "img-alt": "alt",
+          "excerpt": "Приблизительно 270 знаков за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми [...]",
+          "link": "article.html"
+        },
+        {
+          "date": "18 ноября 2020",
+          "title": "Какой-то заглавный текст",
+          "img": "article-2/2-sm.jpg",
+          "img-alt": "alt",
+          "excerpt": "Приблизительно 270 знаков за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми [...]",
+          "link": "article.html"
+        },
+      ])
+    </ul> -->
+  </section>
+</main>
+
+@@include('_src/html/block/footer.html')
+@@include('_src/html/block/up.html')
+@@include('_src/html/block/scripts.html', {
+  "path": ""
+})

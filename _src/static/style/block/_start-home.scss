@@ -1,0 +1,76 @@
+.start-home {
+  position: relative;
+
+  height: 800px;
+  padding-top: 300px;
+
+  background: url(../img/ui/start-home_bg.jpg) center top no-repeat;
+  background-size: 100%;
+
+  @media (max-width: $xl) {
+    height: 600px;
+    padding-top: 250px;
+  }
+
+  @media (max-width: $lg) {
+    height: 500px;
+    padding-top: 200px;
+  }
+
+  @media (max-width: $md) {
+    height: 400px;
+    padding-top: 150px;
+  }
+
+  @media (max-width: $sm) {
+    height: 300px;
+    padding-top: 150px;
+  }
+}
+
+.start-home__title {
+  position: relative;
+  z-index: 10;
+
+  width: 580px;
+  margin: 0 auto;
+  padding: 40px;
+
+  line-height: 1.5;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    background-color: rgba(0, 0, 0, .5);
+    transform: skewX(-15deg);
+
+    @media (max-width: $sm) {
+      transform: skewX(0);
+    }
+  }
+
+  span {
+    color: $c-accent;
+  }
+
+  @media (max-width: $lg) {
+    width: 450px;
+    padding: 30px;
+  }
+
+  @media (max-width: $sm) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 20px;
+  }
+}

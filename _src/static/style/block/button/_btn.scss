@@ -1,0 +1,63 @@
+.btn {
+  @extend .btn-reset;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  vertical-align: middle;
+
+  transition: .3s;
+
+  user-select: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  // ///////////////////////////////////////// type
+  &--lite {
+    width: 300px;
+    padding: 13px;
+
+    font-family: $ff-title;
+    color: $c-gray;
+
+    background-color: transparentize($c-main, .2);
+    border: 2px solid $c-main;
+
+    &:hover {
+      color: $c-gray;
+
+      background-color: $c-main;
+    }
+
+    @media (max-width: $sm) {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  &--outline-red {
+    width: 300px;
+    padding: 13px;
+
+    font-family: $ff-title;
+    color: $c-main;
+
+    background-color: transparentize($c-accent, .5);
+    border: 2px solid $c-accent;
+
+    &:hover {
+      color: $c-main;
+
+      background-color: $c-accent;
+    }
+
+
+    @media (max-width: $sm) {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+}

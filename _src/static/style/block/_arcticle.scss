@@ -1,0 +1,54 @@
+.article {
+  overflow-x: hidden;
+}
+
+.article__header-box {
+  position: relative;
+
+  margin-bottom: 40px;
+
+  border-top: 10px solid $c-accent;
+  border-left: 10px solid $c-accent;
+
+  @media (max-width: $sm) {
+    margin-bottom: 30px;
+
+    border-top: 0 solid $c-accent;
+    border-left: 4px solid $c-accent;
+  }
+}
+
+.article__img {
+}
+
+.article__header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 20px 40px;
+
+  background-color: transparentize($c-gray, .4);
+
+  @media (max-width: $sm) {
+    position: relative;
+
+    padding: 16px 16px;
+  }
+}
+
+.article__date {
+  display: block;
+
+  font-weight: 500;
+  font-size: 15px;
+  font-family: $ff-title;
+  color: transparentize($c-main, .2);
+}
+
+.article__title {
+  margin-bottom: 0;
+
+  text-align: left;
+}

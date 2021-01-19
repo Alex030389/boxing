@@ -1,0 +1,29 @@
+.blog {
+}
+
+.blog__list {
+}
+
+.blog__item {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (max-width: $sm) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &:nth-child(odd) {
+    background-color: $c-gray-4;
+
+    .blog-article__heading {
+      background-color: $c-gray-5;
+    }
+  }
+
+  &:nth-child(even) {
+    .blog-article__heading {
+      background-color: $c-gray-4;
+    }
+  }
+}

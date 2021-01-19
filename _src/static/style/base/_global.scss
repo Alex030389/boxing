@@ -1,0 +1,39 @@
+body {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+
+// overflow-x: hidden;
+
+  font-size: $fz-main;
+  line-height: 1.6;
+  font-family: $ff-main;
+  color: $c-main;
+
+  background-color: $c-gray-5;
+
+  @media (max-width: $sm) {
+    font-size: 16px;
+  }
+}
+
+.main {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button:active {
+  outline: none;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
