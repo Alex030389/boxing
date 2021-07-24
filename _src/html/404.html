@@ -1,0 +1,35 @@
+@@include('_src/html/block/head.html', {
+  "title": "404",
+  "description": "Такой страницы не существует",
+  "path": ""
+})
+@@include('_src/html/block/header.html', {
+  "main": "",
+  "services": "",
+  "price": "",
+  "gallery": "",
+  "blog": "",
+  "contacts": "",
+  "path": ""
+})
+
+<main class="main">
+  <div class="section section--pt--xl">
+
+    <!-- //////////////////////////////////////////////// page-404 -->
+    <section class="page-404">
+      <div class="page-404__container container">
+        <h1 class="page-404__title title title--mb--lg">404 - страница не найдена</h1>
+        <p><a class="btn btn--lite" href="/">Перейти на главную</a></p>
+      </div><!--/container-->
+    </section>
+
+     
+  </div><!--section-->
+</main>
+
+@@include('_src/html/block/footer.html')
+@@include('_src/html/block/up.html')
+@@include('_src/html/block/scripts.html', {
+  "path": ""
+})

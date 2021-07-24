@@ -1,0 +1,70 @@
+@@include('_src/html/block/head.html', {
+  "title": "На площади возле Дома культуры прошел турнир по боксу в рамках фестиваля уличной культуры «Streekoza-2021»",
+  "description": "На площади возле Дома культуры прошел турнир по боксу в рамках фестиваля уличной культуры «Streekoza-2021».",
+  "path": ""
+})
+@@include('_src/html/block/header.html', {
+  "main": "",
+  "services": "",
+  "price": "",
+  "gallery": "",
+  "blog": "main-menu__link--current",
+  "contacts": "",
+  "path": ""
+})
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// article -->
+  <section class="article section section--pt--xl">
+    <div class="container">
+      <div class="article__header-box">
+        <img class="article__img" src="/static/img/blog/streekoza-2021-turnir-po-boksu/top.jpg" alt="img" width="1136" height="590">
+        <div class="article__header">
+          <span class="article__date">28 июня 2021</span>
+          <h1 class="article__title title">На площади возле Дома культуры прошел турнир по боксу в рамках фестиваля уличной культуры «Streekoza-2021».</h1>
+        </div>        
+      </div><!--/article__header-box-->
+      <div class="content">
+        <p>Боксеры БК «Медведь» Дзержинский район и СДЮШОР профсоюзов МТЗ г Минск определяли победителей соревнований. Бои получились яркими и зрелищными с накалом страстей и активной поддержкой зрителей. К сожалению, погода внесла свои коррективы и не все участники турнира проявили свои умения и навыки. Надеемся, что в следующий раз у нас все получится так, как запланировали.</p>
+        <p>Участники турнира по боксу: Валаханович Антон, Кудлач Владислав, Байдак Роман, Киселевич Артём, Круглик Павел, Пантюк Максим, Чужов Данила, Шабуня Артём, Шатиленя Богдан, Такушевич Дмитрий, Зиневич Глеб, Валаханович Вадим, Прозецкий Алексей.</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <div class="gallery__list list-reset row" data-js="magnific">
+          @@loop('_src/html/block/loop-gallery-img.html', [
+            {
+              "img": "blog/streekoza-2021-turnir-po-boksu/bl-1",
+              "img-alt": "box img-bl-1",
+            },
+            {
+              "img": "blog/streekoza-2021-turnir-po-boksu/bl-2",
+              "img-alt": "box img-bl-2",
+            },
+            {
+              "img": "blog/streekoza-2021-turnir-po-boksu/bl-3",
+              "img-alt": "box img-bl-3",
+            },
+            {
+              "img": "blog/streekoza-2021-turnir-po-boksu/bl-4",
+              "img-alt": "box img-bl-4",
+            },
+            {
+              "img": "blog/streekoza-2021-turnir-po-boksu/bl-5",
+              "img-alt": "box img-bl-5",
+            },
+          ])
+        </div>
+        <!-- <div class="content__wrap-img content__wrap-img--right">
+          <img class="content__img" src="/static/img/blog/article-1/1-1.jpg" alt="img">
+        </div> -->
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('_src/html/block/footer.html')
+@@include('_src/html/block/up.html')
+@@include('_src/html/block/scripts.html', {
+  "path": ""
+})

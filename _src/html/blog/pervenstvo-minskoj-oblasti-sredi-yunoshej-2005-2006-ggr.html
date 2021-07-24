@@ -1,0 +1,80 @@
+@@include('_src/html/block/head.html', {
+  "title": "Первенство Минской области по боксу среди юношей 2005-2006 ггр",
+  "description": "В г Солигорске 24-26.02.21г прошло первенство Минской области среди юношей 2005-2006 ггр.",
+  "path": ""
+})
+@@include('_src/html/block/header.html', {
+  "main": "",
+  "services": "",
+  "price": "",
+  "gallery": "",
+  "blog": "main-menu__link--current",
+  "contacts": "",
+  "path": ""
+})
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// article -->
+  <section class="article section section--pt--xl">
+    <div class="container">
+      <div class="article__header-box">
+        <img class="article__img" src="/static/img/blog/pervenstvo-minskoj-oblasti-sredi-yunoshej-2005-2006-ggr/top.jpg" alt="img" width="1136" height="590">
+        <div class="article__header">
+          <span class="article__date">26 февраля 2021</span>
+          <h1 class="article__title title">Первенство Минской области по боксу среди юношей 2005-2006 ггр</h1>
+        </div>        
+      </div><!--/article__header-box-->
+      <div class="content">
+        <p>На прошедшем первенстве Минской области по боксу в г Солигорске 24-26.02.21г среди юношей 2005-2006 ггр боксеры из Дзержинского района заняли следующие места:</p>
+        <ul>
+          <li>1 место в весовой категории до 50кг - Даниил Чужов;</li>
+          <li>2 место - Максим Пантюк;</li>
+          <li>2 место до 52 кг - Артём Шабуня;</li>
+          <li>1 место до 60 кг-Богдан Шатиленя;</li>
+          <li>3 место до 66кг-Егор Кленовский;</li>
+          <li> 3 место до 70 кг-Дмитрий Такушевич;</li>
+        </ul>
+        <p>Среди юношей 2007-2008 ггр:</p>
+        <ul>
+          <li>2 место до 40 кг-Павел Коршун;</li>
+          <li>3 место до 46 кг-Артём Киселевич;</li>
+        </ul>
+        <p>Алексей Труханович участник соревнований. Даниил Чужов, Максим Пантюк, Богдан Шатиленя прошли отбор в команду Минской области по боксу и будут учавствовать в первенстве Республики Беларусь с 15.03 по 20.03.21г в г Полоцке.</p>
+        <div class="gallery__list list-reset row" data-js="magnific">
+          @@loop('_src/html/block/loop-gallery-img.html', [
+            {
+              "img": "blog/pervenstvo-minskoj-oblasti-sredi-yunoshej-2005-2006-ggr/bl-1",
+              "img-alt": "box img-bl-1",
+            },
+            {
+              "img": "blog/pervenstvo-minskoj-oblasti-sredi-yunoshej-2005-2006-ggr/bl-2",
+              "img-alt": "box img-bl-1",
+            },
+            {
+              "img": "blog/pervenstvo-minskoj-oblasti-sredi-yunoshej-2005-2006-ggr/bl-3",
+              "img-alt": "box img-bl-1",
+            },
+            {
+              "img": "blog/pervenstvo-minskoj-oblasti-sredi-yunoshej-2005-2006-ggr/bl-4",
+              "img-alt": "box img-bl-1",
+            },
+            {
+              "img": "blog/pervenstvo-minskoj-oblasti-sredi-yunoshej-2005-2006-ggr/bl-5",
+              "img-alt": "box img-bl-1",
+            },
+            {
+              "img": "blog/pervenstvo-minskoj-oblasti-sredi-yunoshej-2005-2006-ggr/bl-6",
+              "img-alt": "box img-bl-1",
+            },
+          ])
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('_src/html/block/footer.html')
+@@include('_src/html/block/up.html')
+@@include('_src/html/block/scripts.html', {
+  "path": ""
+})

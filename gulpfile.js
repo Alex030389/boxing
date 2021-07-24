@@ -225,7 +225,7 @@ exports.build = series(
     font,
     img,
     cssLib,
-    cssBuild,
+    cssBuild, 
     jsLib,
     jsBuild
   )

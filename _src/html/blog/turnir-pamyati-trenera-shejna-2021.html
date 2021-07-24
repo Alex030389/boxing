@@ -1,0 +1,80 @@
+@@include('_src/html/block/head.html', {
+  "title": "Республиканский турнир по боксу памяти заслуженного тренера РБ Н.Н Шейна",
+  "description": "С 19 по 23.01.21г в Минске прошёл республиканский турнир по боксу среди юношей 2005-2006 ггр памяти заслуженного тренера РБ Н.Н Шейна.",
+  "path": ""
+})
+@@include('_src/html/block/header.html', {
+  "main": "",
+  "services": "",
+  "price": "",
+  "gallery": "",
+  "blog": "main-menu__link--current",
+  "contacts": "",
+  "path": ""
+})
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// article -->
+  <section class="article section section--pt--xl">
+    <div class="container">
+      <div class="article__header-box">
+        <img class="article__img" src="/static/img/blog/turnir-pamyati-trenera-shejna-2021/top.jpg" alt="img" width="1136" height="590">
+        <div class="article__header">
+          <span class="article__date">23 ноября 2021</span>
+          <h1 class="article__title title">Республиканский турнир по боксу памяти заслуженного тренера РБ Н.Н Шейна</h1>
+        </div>        
+      </div><!--/article__header-box-->
+      <div class="content">
+        <p>С 19 по 23.01.21г в Минске прошёл республиканский турнир по боксу среди юношей 2005-2006 ггр памяти заслуженного тренера РБ Н.Н Шейна.</p>
+        <p>130 участников из всех регионов Республики Беларусь вели поединки за призовые места.</p>
+        <p>В в/к до 60кг из 16 боксеров 1 место занял КМС по боксу Богдан Шатиленя. Провел 4 боя в 4 одержал победу. В в/к до 48 кг 2 место занял Данила Чужов. В в/к до 50 кг 2 место занял Максим Пантюк. В в/к до 52 кг 3 место занял Артём Шабуня. В в/к до 70 кг Дмитрий Такушевич участник соревнований.  Данила Чужов и Максим Пантюк выполнили норматив кандидат в мастера спорта по боксу.</p>
+        <p>Поздравляем!</p>
+        <div class="gallery__list list-reset row" data-js="magnific">
+          @@loop('_src/html/block/loop-gallery-img.html', [
+            {
+              "img": "blog/turnir-pamyati-trenera-shejna-2021/bl-1",
+              "img-alt": "box img-bl-1",
+            },
+            {
+              "img": "blog/turnir-pamyati-trenera-shejna-2021/bl-2",
+              "img-alt": "box img-bl-2",
+            },
+            {
+              "img": "blog/turnir-pamyati-trenera-shejna-2021/bl-3",
+              "img-alt": "box img-bl-3",
+            },
+            {
+              "img": "blog/turnir-pamyati-trenera-shejna-2021/bl-4",
+              "img-alt": "box img-bl-4",
+            },
+            {
+              "img": "blog/turnir-pamyati-trenera-shejna-2021/bl-5",
+              "img-alt": "box img-bl-5",
+            },
+            {
+              "img": "blog/turnir-pamyati-trenera-shejna-2021/bl-6",
+              "img-alt": "box img-bl-6",
+            },
+            {
+              "img": "blog/turnir-pamyati-trenera-shejna-2021/bl-7",
+              "img-alt": "box img-bl-7",
+            },
+            {
+              "img": "blog/turnir-pamyati-trenera-shejna-2021/bl-8",
+              "img-alt": "box img-bl-8",
+            },
+          ])
+        </div>
+        <!-- <div class="content__wrap-img content__wrap-img--right">
+          <img class="content__img" src="/static/img/blog/article-1/1-1.jpg" alt="img">
+        </div> -->
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('_src/html/block/footer.html')
+@@include('_src/html/block/up.html')
+@@include('_src/html/block/scripts.html', {
+  "path": ""
+})

@@ -1,0 +1,56 @@
+@@include('_src/html/block/head.html', {
+  "title": "Первенство Республики Беларусь по боксу среди юниоров 2005-2006 ггр",
+  "description": "С 15-20.03.21г в г Полоцке проходило первенство Республики Беларусь по боксу среди юниоров 2005-2006 ггр",
+  "path": ""
+})
+@@include('_src/html/block/header.html', {
+  "main": "",
+  "services": "",
+  "price": "",
+  "gallery": "",
+  "blog": "main-menu__link--current",
+  "contacts": "",
+  "path": ""
+})
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// article -->
+  <section class="article section section--pt--xl">
+    <div class="container">
+      <div class="article__header-box">
+        <img class="article__img" src="/static/img/blog/pervenstvo-rb-po-boksu-sredi-yuniorov-2005-2006-ggr/top.jpg" alt="img" width="1136" height="590">
+        <div class="article__header">
+          <span class="article__date">20 марта 2021</span>
+          <h1 class="article__title title">Первенство Республики Беларусь по боксу среди юниоров 2005-2006 ггр</h1>
+        </div>        
+      </div><!--/article__header-box-->
+      <div class="content">
+        <p>С 15-20.03.21г в г Полоцке проходило первенство Республики Беларусь по боксу среди юниоров 2005-2006 ггр. Отбор для участия в первенстве Европы.</p>
+        <ul>
+          <li>В весовой категории до 50 кг Максим Пантюк занял 3-е место</li>
+          <li>В в/к до 52 кг Артём Шабуня занял 3-е место</li>
+          <li>В в/к до 50 кг Данила Чужов 5-е место</li>
+          <li>В в/к до 60 кг Богдан Шатиленя, в/к до 70 кг Дмитрий Такушевич участники соревнований</li>
+        </ul>       
+        <div class="gallery__list list-reset row" data-js="magnific">
+          @@loop('_src/html/block/loop-gallery-img.html', [
+            {
+              "img": "blog/pervenstvo-rb-po-boksu-sredi-yuniorov-2005-2006-ggr/bl-1",
+              "img-alt": "box img-bl-1",
+            },
+            {
+              "img": "blog/pervenstvo-rb-po-boksu-sredi-yuniorov-2005-2006-ggr/bl-2",
+              "img-alt": "box img-bl-1",
+            },
+          ])
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('_src/html/block/footer.html')
+@@include('_src/html/block/up.html')
+@@include('_src/html/block/scripts.html', {
+  "path": ""
+})
