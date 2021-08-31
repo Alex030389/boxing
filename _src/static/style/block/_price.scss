@@ -54,14 +54,11 @@
   padding: 12px;
 
   text-align: center;
-
   background-color: $c-gray-4;
 }
 
 .price__training-type {
-  @media (max-width: $sm) {
-    margin-bottom: 4px;
-  }
+  margin-bottom: 0;
 }
 
 .price__taining-cost {
