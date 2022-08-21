@@ -1,0 +1,60 @@
+@@include('_src/html/block/head.html', {
+  "title": "На площади возле Дома культуры прошел турнир по боксу в рамках фестиваля уличной культуры «Streekoza-2021»",
+  "description": "На площади возле Дома культуры прошел турнир по боксу в рамках фестиваля уличной культуры «Streekoza-2021».",
+  "path": ""
+})
+@@include('_src/html/block/header.html', {
+  "main": "",
+  "services": "",
+  "price": "",
+  "gallery": "",
+  "blog": "main-menu__link--current",
+  "contacts": "",
+  "path": ""
+})
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// article -->
+  <section class="article section section--pt--xl">
+    <div class="container">
+      <div class="article__header-box">
+        <img class="article__img" src="/static/img/blog/respublikanskaya-spartakiada-2021/top.jpg" alt="img" width="1136" height="590">
+        <div class="article__header">
+          <span class="article__date">23 октября 2021</span>
+          <h1 class="article__title title">Юные боксеры из Дзержинска вернулись с республиканской спартакиады с медалями</h1>
+        </div>        
+      </div><!--/article__header-box-->
+      <div class="content">
+        <p>С 18 по 22 октября в РЦОП «Стайки» прошла спартакиада ДЮСШ, СДЮШОР Республики Беларусь по боксу среди юношей 2006-2007 ггр.</p>
+        <p>Боксеры из Дзержинского района (БК «Медведь») заняли следующие места:</p>
+        <ul>
+          <li>в/к 52 кг 3 место Максим Пантюк;</li>
+          <li>в/к 54 кг Артем Шабуня, Даниил Чужов участники соревнований;</li>
+          <li>в/к 70 кг 2 место Дмитрий Такушевич.</li>
+        </ul>
+        <p>По итогам боя Дмитрий выходит в финал спартакиады.</p>
+        <div class="gallery__list list-reset row" data-js="magnific">
+          @@loop('_src/html/block/loop-gallery-img.html', [
+            {
+              "img": "blog/respublikanskaya-spartakiada-2021/bl-1",
+              "img-alt": "box img-bl-1",
+            },
+            {
+              "img": "blog/respublikanskaya-spartakiada-2021/bl-2",
+              "img-alt": "box img-bl-2",
+            },
+          ])
+        </div>
+        <!-- <div class="content__wrap-img content__wrap-img--right">
+          <img class="content__img" src="/static/img/blog/article-1/1-1.jpg" alt="img">
+        </div> -->
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('_src/html/block/footer.html')
+@@include('_src/html/block/up.html')
+@@include('_src/html/block/scripts.html', {
+  "path": ""
+})
