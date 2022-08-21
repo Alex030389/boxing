@@ -20,38 +20,38 @@
     <!-- //////////////////////////////////////////////// price -->
     <section class="price">
       <div class="price__container container">
-        <h2 class="title title--mb--lg">Стоимость занятий</h2>
+        <h2 class="title title--mb--lg">Стоимость занятий на 1&nbsp;сентября 2022 года</h2>
         <ul class="price__list list-reset row">
           @@loop('_src/html/block/loop-price-item.html', [
             {
               "img": "age_6-13",
-              "img-alt": "age 6-8",
-              "type": "6-8 лет",
-              "cost": "60 руб. в месяц<br>10-12 тренировок"
-            },
-            {
-              "img": "age_14-17",
-              "img-alt": "age 9-12",
-              "type": "9-12 лет",
-              "cost": "40 руб. в месяц<br>10-12 тренировок"
-            },
-            {
-              "img": "age_18-95",
-              "img-alt": "age 9-12",
-              "type": "13-18 лет",
-              "cost": "40 руб. в месяц<br>10-12 тренировок"
+              "img-alt": "age_6-13",
+              "type": "6-17 лет",
+              "cost": "70 руб. в месяц<br>10-12 тренировок"
             },
             {
               "img": "img-4",
               "img-alt": "age 18-95",
-              "type": "от 18 лет группа до&nbsp;6&nbsp;чел.",
-              "cost": "70 руб. в месяц 8 тренировок<br> разовая тренировка 11 руб."
+              "type": "18 лет и старше",
+              "cost": "80 руб. в месяц<br>8 тренировок,<br>разовая тренировка 15 руб."
+            },
+            {
+              "img": "age_18-95",
+              "img-alt": "age_18-95",
+              "type": "Безлимит",
+              "cost": "105 руб. в месяц<br>20 тренировок"
+            },
+            {
+              "img": "age_14-17",
+              "img-alt": "age_14-17",
+              "type": "На 3 месяца",
+              "cost": "180 руб. (выгода 60 руб.)<br>24 тренировки"
             },
             {
               "img": "indiv",
               "img-alt": "individual",
-              "type": "Индивидуальная тренировка c тренером",
-              "cost": "40 руб. занятие"
+              "type": "Индивидуальная тренировка c тренером 1.5 часа",
+              "cost": "30 руб. занятие"
             },
           ])
         </ul>
@@ -64,56 +64,65 @@
         <h2 class="title title--mb--lg">Расписание</h2>
         <ul class="timetable__list list-reset">
           <li class="timetable__item">
-            <div class="timetable__group">Группа 1 (6 - 13 лет)</div>
+            <div class="timetable__group">Группа 1</div>
             <div class="timetable__days">
-              <span>понедельник , среда,</span>
-              <span>суббота</span>
-            </div>
-            <div class="timetable__time">
-              <span>9.00 - 10.00</span>
-              <span>16.00 - 17.00</span>
+              <div class="timetable__days-row">
+                <span>Понедельник</span> <span>10:00 - 11:00</span>
+              </div>
+              <div class="timetable__days-row">
+                <span>Среда</span> <span>10:00 - 11:00</span>
+              </div>
+              <div class="timetable__days-row">
+                <span>Суббота</span> <span>16:00 - 17:00</span>
+              </div>
             </div>
           </li>
           <li class="timetable__item">
-            <div class="timetable__group">Группа 2 (6 - 13 лет)</div>
+            <div class="timetable__group">Группа 2</div>
             <div class="timetable__days">
-              <span>понедельник , среда,</span>
-              <span>суббота</span>
-            </div>
-            <div class="timetable__time">
-              <span>17.00 - 18.00</span>
-              <span>16.00 - 17.00</span>
+              <div class="timetable__days-row">
+                <span>Понедельник</span> <span>17:00 - 18:00</span>
+              </div>
+              <div class="timetable__days-row">
+                <span>Среда</span> <span>17:00 - 18:00</span>
+              </div>
+              <div class="timetable__days-row">
+                <span>Суббота</span> <span>16:00 - 17:00</span>
+              </div>
             </div>
           </li>
           <li class="timetable__item">
-            <div class="timetable__group">Группа 3 (6 - 13 лет)</div>
+            <div class="timetable__group">Группа 3</div>
             <div class="timetable__days">
-              <span>вторник , четверг,</span>
-              <span>суббота</span>
-            </div>
-            <div class="timetable__time">
-              <span>17.00 - 18.00</span>
-              <span>17.00 - 18.00</span>
+              <div class="timetable__days-row">
+                <span>Вторник</span> <span>17:00 - 18:00</span>
+              </div>
+              <div class="timetable__days-row">
+                <span>Четверг</span> <span>17:00 - 18:00</span>
+              </div>
+              <div class="timetable__days-row">
+                <span>Пятница</span> <span>17:00 - 18:30</span>
+              </div>
+              <div class="timetable__days-row">
+                <span>Суббота</span> <span>15:00 - 16:00</span>
+              </div>
             </div>
           </li>
           <li class="timetable__item">
-            <div class="timetable__group">Группа 4 (14 - 17 лет)</div>
+            <div class="timetable__group">Группа 4</div>
             <div class="timetable__days">
-              <span>вторник , четверг,</span>
-              <span>суббота</span>
-            </div>
-            <div class="timetable__time">
-              <span>18.00 - 19.30</span>
-              <span>18.00 - 19.30</span>
-            </div>
-          </li>
-          <li class="timetable__item">
-            <div class="timetable__group">Группа 5 (18 - 95 лет)</div>
-            <div class="timetable__days">
-              <span>вторник , четверг</span>
-            </div>
-            <div class="timetable__time">
-              <span>18.00 - 19.30</span>
+              <div class="timetable__days-row">
+                <span>Вторник</span> <span>18:00 - 19:30</span>
+              </div>
+              <div class="timetable__days-row">
+                <span>Четверг</span> <span>18:00 - 19:30</span>
+              </div>
+              <div class="timetable__days-row">
+                <span>Пятница</span> <span>17:00 - 18:30</span>
+              </div>
+              <div class="timetable__days-row">
+                <span>Суббота</span> <span>10:00 - 11:15</span>
+              </div>
             </div>
           </li>
         </ul>
